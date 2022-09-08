@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Special Elite", sans-serif;
+  font-family: "Roboto", "Special Elite", cursive, sans-serif;
   box-sizing: border-box;
 }
 
@@ -68,8 +70,8 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f3f3f3;
-  font-family: Special + Elite;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 main h2 {
@@ -79,16 +81,22 @@ main h2 {
   margin-top: 80px;
 }
 
-.card p {
-  flex-direction: column;
-  justify-content: center;
-}
-
 .cards {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
+
+.text-card {
+  text-align: center;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -102,7 +110,7 @@ main h2 {
 .bg {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: contain;
