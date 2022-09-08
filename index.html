@@ -13,26 +13,26 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="./img/brasao_de_minas_gerais.png" alt="Brasão Minas Gerais">
+            <img id="brasao" src="./img/brasao_de_minas_gerais.png" alt="Brasão Minas Gerais">
         </div>
         <nav>
             <button id="home" type="submit">Home</button>
-            <button id="curiosidades" type="submit">Curiosidades</button>
-            <button id="video" type="submit">Video</button>
+            <button id="curiosidades" type="submit"><a href="#cards" class="button-nav">Curiosidades</a></button>
+            <button id="video" type="submit"><a href="#video-sec" class="button-nav">Video</a></button>
+
+
         </nav>
     </header>
 
     <main>
         <section class="banner">
-            <div class="banner">
-                <div class="hero-text">
-                    <h1>Minas Gerais</h1>
-                </div>
+            <div class="hero-text">
+                <h1>Minas Gerais</h1>
             </div>
         </section>
 
         <h2>Curiosidades de Minas Gerais</h2>
-        <section class="cards">
+        <section id="cards">
             <div class="card">
                 <div class="bg cultura"></div>
                 <div class="text-card">
@@ -40,7 +40,7 @@
                     <p>A cultura mineira é uma das mais ricas e diversas do Brasil. São fortes as influências do
                         colonizador português no artesanato, nas manifestações populares, na culinária e na arte.
                     </p>
-                    <button>Ver Mais</button>
+                    <button class="button-cards">Ver Mais</button>
                 </div>
             </div>
             <div class="card">
@@ -51,7 +51,7 @@
                         conhecidos estão o feijão tropeiro, angu, frango com quiabo, paçoca de carne seca, farofa,
                         leitão à pururuca, torresmo e pernil assado.
                     </p>
-                    <button>Ver Mais</button>
+                    <button class="button-cards">Ver Mais</button>
                 </div>
             </div>
             <div class="card">
@@ -59,19 +59,18 @@
                 <div class="text-card">
                     <h3>Natureza</h3>
                     <p>Parques, Estações Ecológicas, Monumentos Naturais e Áreas de Proteção Ambiental figuram entre
-                        as
-                        94 unidades de conservação de Minas. Juntos, eles garantem a proteção de quase 2 milhões de
+                        as 94 unidades de conservação de Minas. Juntos, eles garantem a proteção de quase 2 milhões de
                         hectares nos três biomas existentes no estado: Mata Atlântica, Cerrado e Caatinga.
                     </p>
-                    <button>Ver Mais</button>
+                    <button class="button-cards">Ver Mais</button>
                 </div>
             </div>
         </section>
-        <section class="video">
-            <div>
+        <section>
+            <div class="vid">
                 <h3>Video de nosso lindo estado</h3>
                 <a href="https://www.youtube.com/watch?v=PYlh7wkrYtU" target="_blank"><img src="./img/video.jpeg"
-                        alt="video Minas Gerais">
+                        alt="video Minas Gerais" id="video-sec">
             </div>
         </section>
 
